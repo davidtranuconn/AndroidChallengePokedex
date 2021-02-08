@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name"><font fgcolor = '#fff44f'>Pokedex</font></string>
+    <string name="filter_name">Search</string>
+</resources>

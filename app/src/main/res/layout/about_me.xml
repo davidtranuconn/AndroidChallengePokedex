@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@id/imageView"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="About Me"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="195dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:srcCompat="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Name: David Tran"/>
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Education: \n University of Connecticut \n School of Engineering"/>
+
+        <TextView
+            android:id="@+id/major"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/education"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Major: \n Computer Science"/>
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/major"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Experience: \n Android Engineer Intern \n Sept, '19 - Present"/>
+
+        <TextView
+            android:id="@+id/experience1"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/experience"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Projects: \n
+            \n Synchrony Bank App Sept '19 - Dec '19 \n
+            \n UI fixes, Bug fixes, familiarized myself with the production process and team
+            \n
+            \n MySynchrony App Jan '20 - Aug '20 \n
+            \n Bug fixes, UI fixes, Text-to-speech for accessibility, learning and refactoring in Kotlin, Unit testing
+            \n
+            \n CareCredit App Sept '19 - Present \n
+            \n Proof of concept of in-app updates, code coverages"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
